@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.todo-container {
+    background: white;
+    width: 400px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-box {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.edit-btn {
+    border: none;
+    background: #3498db;
+    color: white;
+
+    padding: 7px 12px;
+    margin-left: 5px;
+
+    border-radius: 5px;
+    cursor: pointer;
+}
+.task-info {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+    padding: 10px;
+
+    background: #f1f1f1;
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+.search-box {
+    margin-top: 15px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 8px;
+
+    margin-top: 10px;
+}
+
+.filter-buttons button {
+    flex: 1;
+
+    padding: 8px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #333;
+    color: white;
+
+    cursor: pointer;
+}
+
+.filter-buttons button:hover {
+    background: #555;
+}
+.search-box {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 8px;
+
+    width: 100%;
+    margin-top: 10px;
+}
+
+.filter-buttons button {
+    flex: 1;
+
+    padding: 9px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #333;
+    color: white;
+
+    cursor: pointer;
+}
+
+.filter-buttons button:hover {
+    background: #555;
+}
+/* Dark Mode Button */
+
+.dark-mode-btn {
+    display: block;
+    margin: 0 auto 20px auto;
+
+    padding: 9px 15px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #333;
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* Dark Mode */
+
+body.dark-mode {
+    background: #181818;
+}
+
+body.dark-mode .todo-container {
+    background: #242424;
+    color: white;
+}
+
+body.dark-mode #taskInput,
+body.dark-mode .search-box input {
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark-mode .task-info {
+    background: #333;
+}
+
+body.dark-mode .task {
+    background: #333;
+}
+
+body.dark-mode .dark-mode-btn {
+    background: white;
+    color: #222;
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+
+    .todo-container {
+        width: 92%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .input-box {
+        flex-direction: column;
+    }
+
+    #addBtn {
+        width: 100%;
+    }
+
+    .filter-buttons {
+        flex-direction: column;
+    }
+
+    .task {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+}
